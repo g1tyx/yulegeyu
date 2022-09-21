@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>鱼了个鱼</title>
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({id: "JonPnywkOzKkLXdw",ck: "JonPnywkOzKkLXdw"})</script>
@@ -15,7 +15,37 @@
     
   </body>
   <style>
-    #app{background: none !important;}
+    #app{background: #cffc98 !important;}
+    /* #app{background: none !important;} */
+    .level-board div{background: #f6fed1}
+    .block{border: 1px solid #283410 !important;background: #f6fed1 !important;border-radius: 5px;box-shadow:inset 0px -4px 1px 0px #7ca135;line-height: 38px !important;user-select: none;-webkit-user-select: none;}
+    .block:hover{transform: scale(1.2);}
+    .disabled{filter: brightness(50%);}
+    .disabled:hover,.slot-board div:hover,.random-area div:hover{transform: scale(1) !important;}
+    .slot-board{border: 2px solid #4e3212 !important;background: #8d5e2a !important;border-radius: 5px;box-shadow:inset 0 0 4px 5px #b8843e;padding: 8px;}
+    .random-board{position: relative;margin-bottom: 42px;}
+    .random-area{display: inline-block;width: 45%;text-align: center;position: relative;height: 42px;}
+    .random-area div{position: absolute;top: 0;left:initial;transform: scale(1);}
+    /* .random-board .random-area:nth-child(1) div{left:calc(100% - 42px);}
+    .random-board .random-area:nth-child(2) div{right:calc(100% - 42px);} */
+    .random-board .random-area:nth-child(1) div:nth-child(1){z-index: 10;left:calc(100% - 42px);}
+    .random-board .random-area:nth-child(1) div:nth-child(2){z-index: 9;left:calc(100% - 47px);}
+    .random-board .random-area:nth-child(1) div:nth-child(3){z-index: 8;left:calc(100% - 52px);}
+    .random-board .random-area:nth-child(1) div:nth-child(4){z-index: 7;left:calc(100% - 57px);}
+    .random-board .random-area:nth-child(1) div:nth-child(5){z-index: 6;left:calc(100% - 62px);}
+    .random-board .random-area:nth-child(1) div:nth-child(6){z-index: 5;left:calc(100% - 67px);}
+    .random-board .random-area:nth-child(1) div:nth-child(7){z-index: 4;left:calc(100% - 72px);}
+    .random-board .random-area:nth-child(1) div:nth-child(8){z-index: 3;left:calc(100% - 77px);}
+    .random-board .random-area:nth-child(1) div:nth-child(9){z-index: 2;left:calc(100% - 82px);}
+    .random-board .random-area:nth-child(2) div:nth-child(1){z-index: 10;right:calc(100% - 42px);}
+    .random-board .random-area:nth-child(2) div:nth-child(2){z-index: 9;right:calc(100% - 47px);}
+    .random-board .random-area:nth-child(2) div:nth-child(3){z-index: 8;right:calc(100% - 52px);}
+    .random-board .random-area:nth-child(2) div:nth-child(4){z-index: 7;right:calc(100% - 57px);}
+    .random-board .random-area:nth-child(2) div:nth-child(5){z-index: 6;right:calc(100% - 62px);}
+    .random-board .random-area:nth-child(2) div:nth-child(6){z-index: 5;right:calc(100% - 67px);}
+    .random-board .random-area:nth-child(2) div:nth-child(7){z-index: 4;right:calc(100% - 72px);}
+    .random-board .random-area:nth-child(2) div:nth-child(8){z-index: 3;right:calc(100% - 77px);}
+    .random-board .random-area:nth-child(2) div:nth-child(9){z-index: 2;right:calc(100% - 82px);}
   </style>
 <!--客服 开始-->
 <script src="//g8hh.github.io/static/js/jquery.min.js"></script>
