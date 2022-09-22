@@ -7,63 +7,64 @@
     <title>鱼了个鱼</title>
     <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
     <script>LA.init({id: "JonPnywkOzKkLXdw",ck: "JonPnywkOzKkLXdw"})</script>
-    <script type="module" crossorigin src="./assets/index.36f2aa98.js"></script>
-    <link rel="stylesheet" href="./assets/index.2ac5083b.css">
+    <script type="module" crossorigin src="./assets/index.ab8182bd.js"></script>
+    <link rel="stylesheet" href="./assets/index.5272570f.css">
   </head>
   <body>
     <div id="app"></div>
-    
+    <style>
+      #app{background: #cffc98 !important;}
+      /* #app{background: none !important;} */
+      .level-board div{background: #f6fed1}
+      .block{border: 1px solid #283410 !important;background: #f6fed1 !important;border-radius: 5px;box-shadow:inset 0px -5px 1px 0px #7ca135;line-height: 42px !important;user-select: none;-webkit-user-select: none;width: 46px !important;height: 46px !important;font-size: 30px !important;}
+      .block:hover{transform: scale(1.1);}
+      .disabled{filter: brightness(50%);}
+      .disabled:hover,.slot-board div:hover,.random-area div:hover{transform: scale(1) !important;}
+      .slot-board{border: 2px solid #4e3212 !important;background: #8d5e2a !important;border-radius: 5px;box-shadow:inset 0 0 4px 5px #b8843e;padding: 8px;}
+      .slot-board .block{width: 44px;height: 44px;}
+      .random-board{position: relative;margin-bottom: 42px;}
+      .random-area{display: inline-block;width: 45%;text-align: center;position: relative;height: 42px;}
+      .random-area div{position: absolute;top: 0;left:initial;transform: scale(1);}
+      /* .random-board .random-area:nth-child(1) div{left:calc(100% - 42px);}
+      .random-board .random-area:nth-child(2) div{right:calc(100% - 42px);} */
+      .random-board .random-area:nth-child(1) div:nth-child(1){z-index: 10;left:calc(100% - 42px);}
+      .random-board .random-area:nth-child(1) div:nth-child(2){z-index: 9;left:calc(100% - 47px);}
+      .random-board .random-area:nth-child(1) div:nth-child(3){z-index: 8;left:calc(100% - 52px);}
+      .random-board .random-area:nth-child(1) div:nth-child(4){z-index: 7;left:calc(100% - 57px);}
+      .random-board .random-area:nth-child(1) div:nth-child(5){z-index: 6;left:calc(100% - 62px);}
+      .random-board .random-area:nth-child(1) div:nth-child(6){z-index: 5;left:calc(100% - 67px);}
+      .random-board .random-area:nth-child(1) div:nth-child(7){z-index: 4;left:calc(100% - 72px);}
+      .random-board .random-area:nth-child(1) div:nth-child(8){z-index: 3;left:calc(100% - 77px);}
+      .random-board .random-area:nth-child(1) div:nth-child(9){z-index: 2;left:calc(100% - 82px);}
+      .random-board .random-area:nth-child(2) div:nth-child(1){z-index: 10;right:calc(100% - 42px);}
+      .random-board .random-area:nth-child(2) div:nth-child(2){z-index: 9;right:calc(100% - 47px);}
+      .random-board .random-area:nth-child(2) div:nth-child(3){z-index: 8;right:calc(100% - 52px);}
+      .random-board .random-area:nth-child(2) div:nth-child(4){z-index: 7;right:calc(100% - 57px);}
+      .random-board .random-area:nth-child(2) div:nth-child(5){z-index: 6;right:calc(100% - 62px);}
+      .random-board .random-area:nth-child(2) div:nth-child(6){z-index: 5;right:calc(100% - 67px);}
+      .random-board .random-area:nth-child(2) div:nth-child(7){z-index: 4;right:calc(100% - 72px);}
+      .random-board .random-area:nth-child(2) div:nth-child(8){z-index: 3;right:calc(100% - 77px);}
+      .random-board .random-area:nth-child(2) div:nth-child(9){z-index: 2;right:calc(100% - 82px);}
+      /* 技能按钮调整 */
+      .skill-board .ant-btn-sm{background: #4fa1f7;color: #fff;border: 1px solid #373737;border-radius: 5px;height: 32px;padding: 0 8px;}
+    </style>
+  <!--客服 开始-->
+  <script src="//g8hh.github.io/static/js/jquery.min.js"></script>
+  <link rel="stylesheet" href="//g8hh.github.io/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
+  <script src="//g8hh.github.io/static/js/kf.js"></script>
+  <!-- 客服 结束 -->
+  <!--站长统计--> 
+  <div style="display: none">
+      <script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?028b1b5f659ed138230f4cafd7ad0dfc";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
+      </div>
+  
   </body>
-  <style>
-    #app{background: #cffc98 !important;}
-    /* #app{background: none !important;} */
-    .level-board div{background: #f6fed1}
-    .block{border: 1px solid #283410 !important;background: #f6fed1 !important;border-radius: 5px;box-shadow:inset 0px -5px 1px 0px #7ca135;line-height: 42px !important;user-select: none;-webkit-user-select: none;width: 46px !important;height: 46px !important;font-size: 30px !important;}
-    .block:hover{transform: scale(1.1);}
-    .disabled{filter: brightness(50%);}
-    .disabled:hover,.slot-board div:hover,.random-area div:hover{transform: scale(1) !important;}
-    .slot-board{border: 2px solid #4e3212 !important;background: #8d5e2a !important;border-radius: 5px;box-shadow:inset 0 0 4px 5px #b8843e;padding: 8px;}
-    .slot-board .block{width: 44px;height: 44px;}
-    .random-board{position: relative;margin-bottom: 42px;}
-    .random-area{display: inline-block;width: 45%;text-align: center;position: relative;height: 42px;}
-    .random-area div{position: absolute;top: 0;left:initial;transform: scale(1);}
-    /* .random-board .random-area:nth-child(1) div{left:calc(100% - 42px);}
-    .random-board .random-area:nth-child(2) div{right:calc(100% - 42px);} */
-    .random-board .random-area:nth-child(1) div:nth-child(1){z-index: 10;left:calc(100% - 42px);}
-    .random-board .random-area:nth-child(1) div:nth-child(2){z-index: 9;left:calc(100% - 47px);}
-    .random-board .random-area:nth-child(1) div:nth-child(3){z-index: 8;left:calc(100% - 52px);}
-    .random-board .random-area:nth-child(1) div:nth-child(4){z-index: 7;left:calc(100% - 57px);}
-    .random-board .random-area:nth-child(1) div:nth-child(5){z-index: 6;left:calc(100% - 62px);}
-    .random-board .random-area:nth-child(1) div:nth-child(6){z-index: 5;left:calc(100% - 67px);}
-    .random-board .random-area:nth-child(1) div:nth-child(7){z-index: 4;left:calc(100% - 72px);}
-    .random-board .random-area:nth-child(1) div:nth-child(8){z-index: 3;left:calc(100% - 77px);}
-    .random-board .random-area:nth-child(1) div:nth-child(9){z-index: 2;left:calc(100% - 82px);}
-    .random-board .random-area:nth-child(2) div:nth-child(1){z-index: 10;right:calc(100% - 42px);}
-    .random-board .random-area:nth-child(2) div:nth-child(2){z-index: 9;right:calc(100% - 47px);}
-    .random-board .random-area:nth-child(2) div:nth-child(3){z-index: 8;right:calc(100% - 52px);}
-    .random-board .random-area:nth-child(2) div:nth-child(4){z-index: 7;right:calc(100% - 57px);}
-    .random-board .random-area:nth-child(2) div:nth-child(5){z-index: 6;right:calc(100% - 62px);}
-    .random-board .random-area:nth-child(2) div:nth-child(6){z-index: 5;right:calc(100% - 67px);}
-    .random-board .random-area:nth-child(2) div:nth-child(7){z-index: 4;right:calc(100% - 72px);}
-    .random-board .random-area:nth-child(2) div:nth-child(8){z-index: 3;right:calc(100% - 77px);}
-    .random-board .random-area:nth-child(2) div:nth-child(9){z-index: 2;right:calc(100% - 82px);}
-    /* 技能按钮调整 */
-    .skill-board .ant-btn-sm{background: #4fa1f7;color: #fff;border: 1px solid #373737;border-radius: 5px;height: 32px;padding: 0 8px;}
-  </style>
-<!--客服 开始-->
-<script src="//g8hh.github.io/static/js/jquery.min.js"></script>
-<link rel="stylesheet" href="//g8hh.github.io/static/css/kf.css" type="text/css" media="screen" charset="utf-8">
-<script src="//g8hh.github.io/static/js/kf.js"></script>
-<!-- 客服 结束 -->
-<!--站长统计--> 
-<div style="display: none">
-    <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?028b1b5f659ed138230f4cafd7ad0dfc";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
-</script>
-    </div>
+</html>
